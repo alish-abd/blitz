@@ -1,0 +1,43 @@
+@import "@styles/variables";
+
+.dropdown-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  position: relative;
+  border-radius: 12px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--border {
+    & > .select {
+      filter: none;
+
+      & > .select-option {
+        border: 1px solid $light_gray;
+      }
+
+      & > .select-list {
+        border-top: none;
+      }
+    }
+  }
+
+  &--small {
+    & > .select {
+      // height: 40px;
+
+      & > .select-list > .option {
+        padding: 10px 18px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

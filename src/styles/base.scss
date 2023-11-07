@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  background: $white;
+  overflow: auto;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+.underline {
+  &:hover::after {
+    content: "";
+    width: 100%;
+    border-bottom: solid 2px $blue_navy;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    z-index: 1;
+  }
+}

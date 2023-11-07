@@ -1,0 +1,21 @@
+@import "@styles/variables";
+
+.layout {
+  &__details {
+    padding: 36px 105px 85px 47px;
+    background-color: $grey_bg_lms;
+    border-radius: 19px;
+  }
+
+  &__equal-padding {
+    padding: 40px;
+  }
+
+  &__container {
+    &--white {
+      background-color: $white;
+      border-radius: 19px;
+      border: 1px solid $light;
+    }
+  }
+}

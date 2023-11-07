@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+
+.option {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 17.5px 18px;
+  z-index: 100;
+
+  &.active {
+    background: $alice_blue;
+  }
+
+  &:hover {
+    background: $alice_blue;
+    cursor: pointer;
+  }
+
+  &:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+    color: $light_gray;
+    cursor: default;
+  }
+
+  &__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    color: $blue_text;
+  }
+}

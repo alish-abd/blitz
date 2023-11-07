@@ -1,0 +1,29 @@
+@import "@styles/variables";
+
+.tabs {
+  &__tabs {
+    margin-top: 28px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid $light_gray;
+    align-items: center;
+
+    .active {
+      color: $blue_secondary;
+      border-bottom: 3px solid $blue_secondary;
+      font-weight: bold;
+    }
+  }
+
+  &__tab {
+    cursor: pointer;
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding-bottom: 16px;
+  }
+}

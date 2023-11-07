@@ -1,0 +1,55 @@
+@import "src/styles/variables";
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--left {
+    margin-right: 12px;
+  }
+
+  &--right {
+    margin-left: 12px;
+  }
+
+  &--pointer {
+    cursor: pointer;
+  }
+
+  &--white {
+    & > svg > path {
+      fill: $white;
+    }
+  }
+  &--blue {
+    & > svg > path {
+      fill: $blue-icon;
+    }
+  }
+
+  &--blue-active {
+    & > svg > path {
+      fill: $blue-icon;
+      stroke: $blue-icon;
+    }
+  }
+
+  &--blue-inactive {
+    & > svg > path {
+      stroke: $blue-icon;
+    }
+  }
+
+  &--dark {
+    & > svg > path {
+      fill: $text_dark;
+    }
+  }
+
+  &--saved-dropdown {
+    & > svg > path {
+      fill: $light-gray;
+    }
+  }
+}

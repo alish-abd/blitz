@@ -1,0 +1,35 @@
+@import '@styles/variables';
+
+.writing {
+    &__box {
+        display: flex;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid $gray_dark;
+        gap: 50px;
+    }
+
+    &__group {
+        &-task {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            width: 40%;
+            padding: 20px;
+        }
+    }
+
+    &__input {
+        background-color: $gray_bg;
+        width: 100%;
+        &-box {
+            // background-color: $gray_bg;
+            padding: 20px;
+            width: 100%;
+        }
+    }
+
+    &__textarea {
+        border: 1px solid red;
+    }
+}

@@ -1,0 +1,15 @@
+@import "src/styles/variables";
+
+.article {
+  padding: 32px 32px;
+  background-color: $gray_bg;
+  grid-area: article;
+  // display: flex;
+  // justify-content: center;
+}
+
+@media screen and (max-width: 1023px){
+  .article {
+    padding: 30px 12px;
+  }
+}

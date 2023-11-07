@@ -1,0 +1,60 @@
+@import "src/styles/variables";
+
+.fallback-error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__terminal {
+    width: 350px;
+  }
+
+  &__menu {
+    height: 25px;
+    background-color: $light_gray;
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+
+    & > div {
+      width: 12px;
+      height: 12px;
+      border-radius: 100px;
+    }
+  }
+
+  &__close {
+    background-color: $red;
+    border-color: $red;
+  }
+
+  &__minimize {
+    background-color: $yellow;
+    border-color: $yellow;
+  }
+
+  &__zoom {
+    background-color: $green;
+    border-color: $green;
+  }
+
+  &__screen {
+    height: calc(100% - 25px);
+    background-color: $blue_royal;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &__message {
+    color: $white;
+  }
+}

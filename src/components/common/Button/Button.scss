@@ -1,0 +1,101 @@
+@import "@styles/variables";
+
+.btn {
+  font-weight: 400;
+  position: relative;
+  border: none;
+  outline: none;
+  background: $white;
+  font-size: 14px;
+  color: $blue_text;
+  padding: 20px 40px;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &--main {
+    background: $main;
+    color: white;
+    font-size: 20px;
+  }
+
+
+  &:disabled {
+    cursor: default;
+    color: $white;
+    background-color: $light_gray;
+  }
+
+  &--primary {
+    font-weight: 600;
+    background-color: $blue_navy;
+    color: $white;
+
+    &:hover {
+      background: $blue_dark_hover;
+    }
+  }
+
+  &--secondary {
+    font-weight: 400;
+    background-color: $blue_icon;
+    color: $white;
+    height: 52px;
+
+    &:hover {
+      background: $blue_dark_hover;
+    }
+  }
+
+  &--danger {
+    font-weight: 600;
+    background-color: $red;
+    color: $white;
+  }
+
+  &--danger-text {
+    font-weight: 600;
+    color: $red;
+  }
+
+  &--link {
+    color: $blue_navy;
+  }
+
+  &--pill {
+    border-radius: 10px;
+  }
+
+  &--rounded {
+    border-radius: 40px;
+  }
+
+  &--green {
+    background-color: $green;
+    color: $white;
+
+    &:hover {
+      background-color: $green_gray;
+    }
+  }
+
+  &--opacity-low {
+    opacity: 0.8;
+  }
+
+  &--text {
+    padding: 0;
+    background-color: inherit;
+  }
+
+  &__loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon--left {
+    margin-right: 10px;
+  }
+}

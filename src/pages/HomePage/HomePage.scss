@@ -1,0 +1,12 @@
+.template-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 40px;
+
+  .stp-logo {
+    width: 200px;
+    height: 70px;
+  }
+}

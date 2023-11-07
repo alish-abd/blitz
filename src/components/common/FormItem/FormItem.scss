@@ -1,0 +1,23 @@
+@import "@styles/variables";
+
+.radio {
+  &__helper {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $blue_secondary_placeholder;
+  }
+  &__options {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.dropdown {
+  &__body {
+    width: 45%;
+  }
+}

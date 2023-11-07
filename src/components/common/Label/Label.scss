@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.label {
+  &__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    color: $black_light;
+    margin-bottom: 8px;
+  }
+
+  &--ghost {
+    & > .label__text {
+      color: $blue_gray;
+    }
+  }
+
+  &__v2 {
+    & > .label__text {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      color: $gray_placeholder;
+    }
+  }
+}

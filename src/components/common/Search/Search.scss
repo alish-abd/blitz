@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.search {
+  position: relative;
+
+  &__field {
+    width: 100%;
+    height: 56px;
+    padding: 0 42px 0 18px;
+    outline: none;
+    background: $white;
+    border: 1px solid $light_gray;
+    border-radius: 8px;
+  }
+
+  &__icon {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 18px;
+  }
+
+  &--select {
+    .search__field {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: unset;
+      height: 39px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+  }
+}

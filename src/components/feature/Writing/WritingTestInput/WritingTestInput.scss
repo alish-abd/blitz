@@ -1,0 +1,36 @@
+@import '@styles/variables';
+
+.article {
+    // padding: 0px;
+}
+
+.writing {
+    &__input {
+        border: 1px solid $gray_dark;
+        border-radius: 5px;
+        padding: 15px;
+        resize: none;
+        width: 100%;
+        height: 100%;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+
+        &:focus {
+            border: 2px solid $main_border;
+            background: $white;
+          }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__word-count {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

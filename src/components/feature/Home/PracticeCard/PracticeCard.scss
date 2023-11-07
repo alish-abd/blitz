@@ -1,0 +1,76 @@
+@import "@styles/variables";
+
+.practice {
+  &__card {
+    display: flex;
+    width: calc(50% - 15px);
+    padding: 35px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 35px;
+    border: 1px solid $gray_dark;
+    position: relative;
+    background-color: white;
+
+
+    &-active {
+      cursor: pointer;
+
+    &:hover {
+      border: 1px solid $main_border;
+    }    
+    }
+
+    &-nonactive {
+      pointer-events: none;
+      & > div {
+        & > p {
+          color: $gray_text;
+        }
+        & > div {
+          background: $gray_dark;
+        }
+      }
+    }
+
+    &-badge {
+      background: $main;
+      padding: 8px 16px;
+      border-radius: 99px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      & > p {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    &-group {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &-icon {
+      background: $main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 84px;
+      height: 84px;
+      border-radius: 99px;
+    }
+
+    &-title {
+      color: $main_dark;
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    &-active {
+    }
+  }
+}
